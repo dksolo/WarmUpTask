@@ -1,12 +1,13 @@
 import clsx from "clsx";
-import styles from './TemplateName.module.scss';
+import styles from './Card.module.scss';
 
 export type CardProps = {
-	children: React.ReactNode;
+	className?: string;
+	children?: React.ReactNode;
 };
 
-export function TemplateName({ className }: TemplateNameProps) {
-	return <div className={clsx(styles.container, className)} data-testid="TemplateName">
-		TemplateName
+export function Card({ className, children }: CardProps) {
+	return <div className={clsx(styles.container, className)}>
+		{children}
 	</div>;
 }

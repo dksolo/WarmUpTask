@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import styles from './TemplateName.module.scss';
 
-export type TemplateNameProps = {
+export type FooterProps = {
 	className?: string;
 };
 

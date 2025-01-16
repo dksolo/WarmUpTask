@@ -1,8 +1,11 @@
 import clsx from "clsx";
-import styles from './TemplateName.module.scss';
+import styles from './Input.module.scss';
 
-export type TemplateNameProps = {
-	className?: string;
+export type InputProps = {
+	type: 'InputText' | 'InputEmail' | 'InputPassword';
+	value: string;
+	placeholder?: string;
+	onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
 export function TemplateName({ className }: TemplateNameProps) {

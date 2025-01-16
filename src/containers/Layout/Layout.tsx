@@ -1,8 +1,8 @@
 import clsx from "clsx";
-import styles from './TemplateName.module.scss';
+import styles from './Layout.module.scss';
 
-export type TemplateNameProps = {
-	className?: string;
+export type LayoutProps = {
+	children: React.ReactNode;
 };
 
 export function TemplateName({ className }: TemplateNameProps) {

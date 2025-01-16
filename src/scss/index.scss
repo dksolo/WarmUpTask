@@ -1,10 +1,10 @@
 @import './_variables.scss';
 
 :root {
-  font-family: primaryFont;
-  font-size: fontSize;
-  background-color: quaternaryColor;
-  color: primaryColor;
+  font-family: $primaryFont;
+  font-size: $fontSize;
+  background-color: $quaternaryColor;
+  color: $primaryColor;
 }
 
 body {
@@ -17,19 +17,19 @@ body {
 }
 
 a {
-  color: secondaryColor;
+  color: $secondaryColor;
   text-decoration: none;
 } 
 
 
 a:hover {
-  color: tertiaryColor;
+  color: $tertiaryColor;
   cursor: pointer;
 } 
 
 
 a:focus {
-  color: tertiaryColor;
+  color: $tertiaryColor;
 } 
 
 

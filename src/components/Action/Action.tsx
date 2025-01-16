@@ -1,8 +1,8 @@
 import clsx from "clsx";
 import styles from './TemplateName.module.scss';
 
-export type TemplateNameProps = {
-	className?: string;
+export type ActionProps = {
+	type: 'button' | 'link';
 };
 
 export function TemplateName({ className }: TemplateNameProps) {

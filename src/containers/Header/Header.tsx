@@ -1,8 +1,8 @@
 import clsx from "clsx";
 import styles from './TemplateName.module.scss';
 
-export type TemplateNameProps = {
-	className?: string;
+export type HeaderProps = {
+	children?: React.ReactNode;
 };
 
 export function TemplateName({ className }: TemplateNameProps) {

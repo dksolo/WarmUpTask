@@ -1,0 +1,35 @@
+@import './_variables.scss';
+
+:root {
+  font-family: primaryFont;
+  font-size: fontSize;
+  background-color: quaternaryColor;
+  color: primaryColor;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+a {
+  color: secondaryColor;
+  text-decoration: none;
+} 
+
+
+a:hover {
+  color: tertiaryColor;
+  cursor: pointer;
+} 
+
+
+a:focus {
+  color: tertiaryColor;
+} 
+
+

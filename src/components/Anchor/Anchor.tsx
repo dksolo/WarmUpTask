@@ -1,12 +1,25 @@
 import clsx from "clsx";
 import styles from './Anchor.module.scss';
-import { AnchorHTMLAttributes } from 'react';
+import { NavLink, To } from 'react-router';
 
+export type AnchorProps = {
+	type: 'navLink' | 'href';
+	className?: string;
+	href?: string;
+	to?: To;
+	text: string;
+}
 
-export type AnchorProps = AnchorHTMLAttributes<HTMLAnchorElement>
+export function Anchor({ type, className, href, to, text }: AnchorProps) {
+	let component: React.ReactNode;
+	switch (type) {
+		case "navLink":
+			component = <NavLink className={clsx(styles.container, className)} to={to!}>{text}</NavLink>;
+			break;
+		case "href":
+			component = <a className={clsx(styles.container, className)} href={href!}>{text}</a>;
+			break;
+	}
 
-export function Anchor({ className }: AnchorProps) {
-	return <div className={clsx(styles.container, className)} data-testid="Anchor">
-		This is an Anchor
-	</div>;
+	return component;
 }

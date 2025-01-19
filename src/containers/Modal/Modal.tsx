@@ -1,12 +1,17 @@
 import clsx from "clsx";
-import styles from './TemplateName.module.scss';
+import styles from './Modal.module.scss';
+
 
 export type ModalProps = {
 	children: React.ReactNode;
+	onClose: () => void;
 };
 
-export function TemplateName({ className }: TemplateNameProps) {
-	return <div className={clsx(styles.container, className)} data-testid="TemplateName">
-		TemplateName
+export function Modal({ children, onClose }: ModalProps) {
+	return <div className={styles.overlay}>
+		<div className={styles.modal}>
+			<button className={styles.xButton} onClick={onClose}></button>
+			{children}
+		</div>
 	</div>;
 }

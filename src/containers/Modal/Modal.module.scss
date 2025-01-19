@@ -1,5 +1,31 @@
 @use '@styles/variables' as *;
 
-.container {
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $overlayColor;
+  z-index: 100;
+}
 
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  max-width: 100%;
+  background-color: $quaternaryColor;
+}
+
+.xButton {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border: none;
+  cursor:pointer;
+  background-color: $primaryColor;
 }

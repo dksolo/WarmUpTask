@@ -1,12 +1,14 @@
 import clsx from "clsx";
-import styles from './TemplateName.module.scss';
+import styles from './Section.module.scss';
 
 export type SectionProps = {
 	children: React.ReactNode;
 };
 
-export function TemplateName({ className }: TemplateNameProps) {
-	return <div className={clsx(styles.container, className)} data-testid="TemplateName">
-		TemplateName
+export function Section({ children }: SectionProps) {
+	return <div className={clsx(styles.sectionContainer)}>
+		<div className={styles.sectionContent}>
+			{children}
+		</div>
 	</div>;
 }

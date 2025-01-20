@@ -12,10 +12,10 @@ export type AnchorProps = {
 const Anchor: React.FC<AnchorProps> = ({ className, to, href, text }) => {
 	let component: React.ReactNode;
 	if (to) {
-		component = <NavLink className={clsx(styles.container, className)} to={to!}>{text}</NavLink>;
+		component = <NavLink className={clsx(className)} to={to}>{text}</NavLink>;
 
 	} else {
-		component = <a className={clsx(styles.container, className)} href={href!}>{text}</a>;
+		component = <a className={clsx(className)} href={href}>{text}</a>;
 	}
 	return component;
 }

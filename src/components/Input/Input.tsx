@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import styles from './Input.module.scss';
-import { HTMLInputTypeAttribute } from 'react'
 
 export type InputProps = {
 	type?: 'email' | 'userName' | 'password' | 'text';

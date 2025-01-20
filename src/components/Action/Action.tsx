@@ -1,25 +1,26 @@
 import clsx from "clsx";
-import styles from './TemplateName.module.scss';
+import styles from './Action.module.scss';
 
 export type ActionProps = {
 	type: 'button' | 'link';
-	href: string;
+	href?: string;
 	text: string;
 	className?: string;
+	disabled?: boolean;
+	onClick?: () => void;
+
 };
 
-export function Action({ type, href, text, className, ...props }: ActionProps) {
-	var component: React.ReactNode;
+export function Action({ type, href, disabled, text, className, onClick }: ActionProps) {
+	let component: React.ReactNode;
 	switch (type) {
 		case 'button':
-			component = <button className={clsx(styles.container, className)} {...props}>{text}</button>;
+			component = <button disabled={disabled} className={clsx(className, styles.button)} onClick={onClick}>{text}</button>;
 			break;
 		case 'link':
-
-			component = <a className={clsx(styles.container, className)} href={href}>{text}</a>;
+			component = <a className={clsx(className)} href={href}>{text}</a>;
 			break;
 	}
-	return <div className={clsx(styles.container, className)} data-testid="TemplateName">
-		TemplateName
-	</div>;
+
+	return component;
 }

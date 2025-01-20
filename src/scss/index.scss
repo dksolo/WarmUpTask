@@ -1,10 +1,10 @@
-@import './variables.scss';
+@import './_variables.scss';
 
 :root {
   font-family: $primaryFont;
   font-size: $fontSize;
-  background-color: $quaternaryColor;
-  color: $primaryColor;
+  background-color: $backgroundColor;
+  color: $AccentColor;
 }
 
 body {
@@ -32,4 +32,45 @@ a:focus {
   color: $tertiaryColor;
 } 
 
+.layout {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.headerFooter {
+	width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+	color: $backgroundColor;
+	background-color: $AccentColor;
+}
+
+.navBar {
+	width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px 20px;
+  list-style: none;
+}
+
+.navBarLinks {
+    color: $secondaryColor;
+  }
+  
+.navBarLinks:hover {
+color: $backgroundColor
+}
+
+.form {
+  padding:10px;
+  justify-items: center;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,18 +1,18 @@
 import clsx from "clsx";
-import styles from './Field.module.scss';
 
 export type FieldProps = {
-	className: string;
-	inputID: string;
-	input: React.ReactNode;
+	className?: string;
+	inputID?: string;
 	text: string;
+	children: React.ReactNode;
 };
 
-export function Field({ className, inputID, input, text }: FieldProps) {
-	return <div>
-		<label htmlFor={inputID} className={clsx(styles.container, className)}>
-			{text}
-		</label>
-		{input}
-	</div>;
+export function Field({ className, inputID, children, text }: FieldProps) {
+	return (
+		<div>
+			<label htmlFor={inputID} className={clsx(className)}>
+				{text}
+			</label>
+			{children}
+		</div>);
 }

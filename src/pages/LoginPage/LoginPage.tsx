@@ -1,17 +1,22 @@
 import clsx from "clsx";
-import styles from './TemplateName.module.scss';
+import React from 'react';
+import Layout from '../../containers/Layout/Layout';
+import { Section } from '../../containers/Section/Section';
+import { Card } from '../../containers/Card/Card';
+import LoginForm from '../../screens/LoginForm/LoginForm';
 
-export type TemplateNameProps = {
-	className?: string;
+const handleLogIn = async (email: string, password: string) => {
+	console.log('Login submitted:', { email, password });
 };
 
-export function TemplateName({ className }: TemplateNameProps) {
-	return (
-		<div
-			className={clsx(styles.container, className)}
-			data-testid="TemplateName"
-		>
-			TemplateName
-		</div>
+const LoginPage: React.FC = () => {
+    return (
+		<Section>
+			<Card>
+				<LoginForm onSubmit={handleLogIn} />
+			</Card>
+		</Section>
 	);
-}
+};
+
+export default LoginPage

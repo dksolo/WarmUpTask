@@ -1,8 +1,8 @@
 import clsx from "clsx";
 import styles from './TemplateName.module.scss';
 
-export type FormProps = {
-	children: React.ReactNode;
+export type TemplateNameProps = {
+	className?: string;
 };
 
 export function TemplateName({ className }: TemplateNameProps) {

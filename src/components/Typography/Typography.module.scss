@@ -1,5 +1,10 @@
 @use '@styles/variables' as *;
 
-.container {
+.mainHeader {
+    align-self: center;
+    font-size: $bigFontSize;
+}
 
+.paragraph {
+    font-size: $fontSize;
 }

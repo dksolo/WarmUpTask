@@ -9,7 +9,7 @@ export type ModalProps = {
 export function Modal({ children, onClose }: ModalProps) {
 	return <div className={styles.overlay}>
 		<div className={styles.modal}>
-			<button className={styles.xButton} onClick={onClose}></button>
+			<button className={styles.xButton} onClick={onClose}>X</button>
 			{children}
 		</div>
 	</div>;

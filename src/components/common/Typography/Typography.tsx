@@ -9,19 +9,7 @@ export type TypographyProps = {
 
 export function Typography({ tag, value, className }: TypographyProps) {
 	const CustomTag = tag as keyof JSX.IntrinsicElements;
-	let extraStyle: string;
-	switch (CustomTag) {
-		case 'h1':
-			extraStyle = styles.mainHeader;
-			break;
-		case 'p':
-			extraStyle = styles.paragraph;
-			break;
-		default:
-			extraStyle = '';
-			break;
-	}
-	return <CustomTag className={clsx(extraStyle, className)}>
+	return <CustomTag className={clsx(className, CustomTag == 'h1' && styles.mainHeader, CustomTag == 'p' && styles.paragraph)}>
 		{value}
 	</CustomTag>;
 }

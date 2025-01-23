@@ -1,7 +1,7 @@
 import clsx from "clsx";
-import { Field } from "../../containers/Field/Field";
-import { Input } from "../../components/Input/Input";
-import { Action } from "../../components/Action/Action";
+import { Field } from "../../components/Form/Field/Field";
+import { Input } from "../../components/Form/Input/Input";
+import { Action } from "../../components/common/Action/Action";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 

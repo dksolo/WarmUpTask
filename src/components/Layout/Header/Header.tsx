@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { Typography } from "../../components/Typography/Typography";
+import { Typography } from "../../common/Typography/Typography";
 import { useTranslation } from "react-i18next";
 import Menu from "../Menu/Menu";
 

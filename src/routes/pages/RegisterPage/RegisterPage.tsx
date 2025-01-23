@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import Layout from '../../containers/Layout/Layout';
-import {Section} from '../../containers/Section/Section';
-import {Card} from '../../containers/Card/Card';
-import RegisterForm from '../../screens/RegisterForm/RegisterForm';
-import { getRegisterData, RegisterData } from '../../api/registerApi';
+import Layout from '@/components/Layout/Layout';
+import { Section } from '@/components/Layout/Section/Section';
+import { Card } from '@/components/Layout/Card/Card';
+import RegisterForm from '@/screens/RegisterForm/RegisterForm';
+import { getRegisterData, RegisterData } from '@/api/registerApi';
 
 //TODO FIX THIS \|/
 

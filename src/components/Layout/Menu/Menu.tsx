@@ -1,4 +1,4 @@
-import Anchor from '../../components/Anchor/Anchor';
+import Anchor from '../../common/Anchor/Anchor';
 import { useTranslation } from "react-i18next";
 
 export type MenuProps = {

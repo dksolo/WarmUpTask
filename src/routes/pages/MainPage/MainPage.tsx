@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import { Section } from '@/containers/Section/Section';
-import Anchor from '@/components/Anchor/Anchor';
-import { Action } from '@/components/Action/Action'; //Button
-import { Modal } from '../../containers/Modal/Modal';
-import LoginForm from '../../screens/LoginForm/LoginForm';
-import RegisterForm from '../../screens/RegisterForm/RegisterForm';
-import { getMainData, MainData } from '../../api/mainApi';
+import Anchor from '@/components/common/Anchor/Anchor';
+import { Section } from '@/components/Layout/Section/Section';
+import { Action } from '@/components/common/Action/Action';
+import { Modal } from '@/components/Layout/Modal/Modal';
+import LoginForm from '@/screens/LoginForm/LoginForm';
+import RegisterForm from '@/screens/RegisterForm/RegisterForm';
+import { getMainData, MainData } from '@/api/mainApi';
 import { useTranslation } from 'react-i18next';
-import {Card} from '../../containers/Card/Card';
-import LanguageSelector from '@/components/LanguageSelector/LanguageSelector';
+import { Card } from '@/components/Layout/Card/Card';
+import LanguageSelector from '@/components/common/LanguageSelector/LanguageSelector';
+
 
 const MainPage: React.FC = () => {
 	const [logInModalVisible, setLogInModalVisible] = useState(false);

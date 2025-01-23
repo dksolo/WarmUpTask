@@ -13,5 +13,12 @@
   gap: 20px;
   padding: 10px;
   background-color: $quaternaryColor;
+}
 
+.cardLink:hover {
+  background-color: $secondaryColor;
+}
+
+.cardLink:focus {
+  background-color: $secondaryColor;
 }

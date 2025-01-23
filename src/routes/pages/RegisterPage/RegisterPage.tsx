@@ -3,9 +3,8 @@ import Layout from '@/components/Layout/Layout';
 import { Section } from '@/components/Layout/Section/Section';
 import { Card } from '@/components/Layout/Card/Card';
 import RegisterForm from '@/screens/RegisterForm/RegisterForm';
-import { getRegisterData, RegisterData } from '@/api/registerApi';
+import { Typography } from '@/components/common/Typography/Typography';
 
-//TODO FIX THIS \|/
 
 const handleRegisterSubmit = (
 	name: string,
@@ -19,26 +18,18 @@ const handleRegisterSubmit = (
 	});
 };
 
-const RegisterPage: React.FC = () => {
-	const [data, setData] = useState<RegisterData | null>(null);
-	const [error, setError] = useState<string | null>(null);
 
-	useEffect(() => {
-		getRegisterData()
-			.then((response) => {setData(response); console.log(data)})
-			.catch((err) =>
-				setError(err instanceof Error ? err.message : String(err))
-			);
-	}, []);
+export type RegisterPageProps = {
+	data: {result: string}
+}
 
+export const RegisterPage: React.FC<RegisterPageProps> = ({data}) => {
 	return (
 		<Section>
 			<Card>
 				<RegisterForm onSubmit={handleRegisterSubmit} />
+				<Typography tag='p' value={data.result} />
 			</Card>
-			{error && <div>Error: {error}</div>}
 		</Section>
 	);
 };
-
-export default RegisterPage;

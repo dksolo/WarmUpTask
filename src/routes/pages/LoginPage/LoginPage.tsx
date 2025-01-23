@@ -4,19 +4,24 @@ import { Section } from "@/components/Layout/Section/Section";
 import { Card } from "@/components/Layout/Card/Card";
 
 import LoginForm from "@/screens/LoginForm/LoginForm";
+import { Typography } from "@/components/common/Typography/Typography";
 
 const handleLogIn = async (email: string, password: string) => {
 	console.log('Login submitted:', { email, password });
 };
 
-const LoginPage: React.FC = () => {
+export type LoginPageProps = {
+	data: {result: string}
+}
+
+
+export const LoginPage: React.FC<LoginPageProps> = ( {data} ) => {
     return (
 		<Section>
 			<Card>
-				<LoginForm onSubmit={handleLogIn} />
+				<LoginForm onSubmit={() => handleLogIn} />
+				<Typography tag='p' value={data.result} />
 			</Card>
 		</Section>
 	);
 };
-
-export default LoginPage

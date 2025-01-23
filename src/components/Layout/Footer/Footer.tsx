@@ -3,10 +3,11 @@ import Menu from "../Menu/Menu";
 
 export type FooterProps = {
 	className?: string;
+	menu?: MenuItemProps[];
 };
 
-export default function Footer({ className }: FooterProps) {
+export default function Footer({ className, menu }: FooterProps) {
 	return <div className={clsx(className)}>
-		<Menu />
+		{menu ? <Menu menuItems={menu}/> : null}
 	</div>;
 }

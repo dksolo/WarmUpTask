@@ -1,17 +1,26 @@
 import Anchor from '../../common/Anchor/Anchor';
-import { useTranslation } from "react-i18next";
 
 export type MenuProps = {
 	className?: string;
+	menuItems: MenuItemProps[];
 };
 
-export default function Menu({ className }: MenuProps) {
-	const [ t ] = useTranslation();
+export type MenuItemProps = {
+	text: string;
+	href: string;
+}
+
+export default function Menu({ className, menuItems }: MenuProps) {
+	const renderItem = ((item : MenuItemProps) => <Anchor className={className} href={item.href} text={item.text} />);
+
 	return( 
 		<nav className="navBar">
-			<li><Anchor className="navBarLinks" href={'/'} text={t('navHome')} /></li>
-			<li><Anchor className="navBarLinks" href={'/login'} text={t('navLogin')} /></li>
-			<li><Anchor className="navBarLinks" href={'/register'} text={t('navRegister')} /></li>
+			{
+			menuItems.map((item, index) => 
+				<li key={index}>
+					{renderItem(item)}
+				</li>)
+			}
 		</nav>
         );
 }

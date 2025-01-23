@@ -1,6 +1,5 @@
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router';
 import { routes as publicRoutes } from '@/routes/routes';
-import MainPage from './pages/MainPage/MainPage';
 import Layout from './components/Layout/Layout';
 
 function LayoutWrapper() {

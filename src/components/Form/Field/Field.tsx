@@ -9,10 +9,9 @@ export type FieldProps = {
 
 export function Field({ className, inputID, children, text }: FieldProps) {
 	return (
-		<div>
 			<label htmlFor={inputID} className={clsx(className)}>
 				{text}
+				{children}
 			</label>
-			{children}
-		</div>);
+			);
 }

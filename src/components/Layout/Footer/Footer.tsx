@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import Menu from "../Menu/Menu";
+import Menu, { MenuItemProps } from "../Menu/Menu";
 
 export type FooterProps = {
 	className?: string;

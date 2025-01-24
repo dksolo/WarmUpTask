@@ -8,6 +8,6 @@ export type FooterProps = {
 
 export default function Footer({ className, menu }: FooterProps) {
 	return <div className={clsx(className)}>
-		{menu ? <Menu menuItems={menu}/> : null}
+		{menu ? <Menu className='navBar' menuItems={menu}/> : null}
 	</div>;
 }

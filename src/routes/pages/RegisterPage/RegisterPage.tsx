@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Layout from '@/components/Layout/Layout';
 import { Section } from '@/components/Layout/Section/Section';
 import { Card } from '@/components/Layout/Card/Card';
 import RegisterForm from '@/screens/RegisterForm/RegisterForm';

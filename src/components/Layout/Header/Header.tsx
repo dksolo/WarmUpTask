@@ -13,6 +13,6 @@ export default function Header({ className, menu }: HeaderProps) {
 
 	return <div className={clsx(className)}>
 		<Typography tag='h1' value={t('warmUpTask')}/>
-		{menu ? <Menu menuItems={menu}/> : null}
+		{menu ? <Menu className='navBar' menuItems={menu}/> : null}
 	</div>;
 }

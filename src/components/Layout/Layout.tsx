@@ -12,15 +12,18 @@ const Layout = ({ children }: LayoutProps) => {
 	const navItems: MenuItemProps[] = [
 		{
 			'text': t('navHome'),
-			'href': '/'
+			'href': '/',
+			'className': 'navAnchor'
 		},
 		{
 			'text': t('navLogin'),
-			'href': '/login'
+			'href': '/login',
+			'className': 'navAnchor'
 		},
 		{
 			'text': t('navRegister'),
-			'href': '/register'
+			'href': '/register',
+			'className': 'navAnchor'
 		},
 	]
 

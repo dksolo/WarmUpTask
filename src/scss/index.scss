@@ -17,20 +17,19 @@ body {
 }
 
 a {
-  color: $secondaryColor;
   text-decoration: none;
 } 
 
 
-a:hover {
-  color: $tertiaryColor;
-  cursor: pointer;
-} 
-
-
-a:focus {
-  color: $tertiaryColor;
-} 
+//a:hover {
+//  color: $tertiaryColor;
+//  cursor: pointer;
+//} 
+//
+//
+//a:focus {
+//  color: $tertiaryColor;
+//} 
 
 .layout {
   width: 100vw;
@@ -67,6 +66,10 @@ a:focus {
 .navBarLinks:hover {
 color: $backgroundColor
 }
+
+.navBarLinks:focus {
+  color: $backgroundColor
+  }
 
 .form {
   padding:10px;

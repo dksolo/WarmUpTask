@@ -1,5 +1,24 @@
-@use '@styles/variables' as *;
+@use '@styles/_variables' as *;
 
-.container {
-    width: 100%;
+.simpleAnchor {
+    color: $secondaryColor;
+    text-decoration: none;
+}
+
+.simpleAnchor:hover {
+    color: $tertiaryColor;
+    cursor: pointer;
+}
+
+.simpleAnchor:focus {
+    color: $tertiaryColor;
+}
+
+.fancyAnchor {
+    text-decoration: none;
+}
+
+.navAnchor:focus {
+    color: $backgroundColor;
+    background-color: $quaternaryColor;
 }

@@ -1,0 +1,8 @@
+@use '@styles/_variables' as *;
+
+.form {
+    padding:10px;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+  }

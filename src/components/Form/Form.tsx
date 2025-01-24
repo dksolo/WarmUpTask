@@ -1,12 +1,16 @@
 import clsx from "clsx";
-import styles from './TemplateName.module.scss';
+import styles from './Form.module.scss';
 
-export type TemplateNameProps = {
+export type FormProps = {
+	children: React.ReactNode;
+	onSubmit: (e: React.FormEvent) => void;
 	className?: string;
 };
 
-export function TemplateName({ className }: TemplateNameProps) {
-	return <div className={clsx(styles.container, className)} data-testid="TemplateName">
-		TemplateName
-	</div>;
+export function Form({ children, onSubmit, className }: FormProps) {
+	return (
+	<form className={clsx(styles.form, className)} onSubmit={onSubmit}>
+		{children}
+	</form>
+	);
 }

@@ -22,6 +22,7 @@ export const MainPage: React.FC<MainPageProps> = ( {data} ) => {
 	return (
 		<Section>
 			<Card>
+				<Typography tag='h2' value={t('homePage')}/>
 				<LanguageSelector />
 				<Action type="button" text={t('LogIn')} onClick={() => setLogInModalVisible(true)} />
 				<Action type="button" text={t('Register')} onClick={() => setRegModalVisible(true)} />

@@ -23,5 +23,6 @@
   "warmUpTask": "Разминка",
   "navLogin": "Войти",
   "navRegister": "Зарегистрироваться",
-  "navHome": "Домой"
+  "navHome": "Домой",
+  "homePage": "Добро пожаловать!"
 }

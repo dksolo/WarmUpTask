@@ -16,9 +16,9 @@ const Anchor: React.FC<AnchorProps> = ({...anchorProps}) => {
 	const typeOfLink = typeof anchorProps.link
 	if (anchorProps.className) {
 		props.className=clsx(
-			styles.className,
 			typeOfLink === 'string' && styles.simpleAnchor,
-			typeOfLink === 'function' && styles.FancyAnchor
+			typeOfLink === 'function' && styles.FancyAnchor,
+			anchorProps.className === 'navAnchor' && styles.navAnchor
 		)
 	}
 

@@ -23,6 +23,7 @@
   "warmUpTask": "Warm Up Task",
   "navLogin": "Login",
   "navRegister": "Register",
-  "navHome": "Home"
+  "navHome": "Home",
+  "homePage": "Welcome!"
 
 }

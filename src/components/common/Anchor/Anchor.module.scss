@@ -6,19 +6,26 @@
 }
 
 .simpleAnchor:hover {
-    color: $tertiaryColor;
+    color: $quaternaryColor;
     cursor: pointer;
 }
 
 .simpleAnchor:focus {
-    color: $tertiaryColor;
+    color: $quaternaryColor;
 }
 
 .fancyAnchor {
     text-decoration: none;
 }
 
+.navAnchor {
+    color: $secondaryColor;
+}
+
 .navAnchor:focus {
     color: $backgroundColor;
-    background-color: $quaternaryColor;
+}
+
+.navAnchor:hover {
+    color: $backgroundColor;
 }

@@ -4,5 +4,26 @@
     "logIn": "Log in",
     "logOut": "Log out",
     "signUp": "Sign up"
-  }
+  },
+  "main": {
+    "title": "Intellectual help to the rescue",
+    "description": "We give NCOs an opportunity to get help from professional volunteers of different fields for free, and for volunteers - to use their skills and knowledge to do a good deed.",
+    "applyVolunteer": "Become a volunteer",
+    "volunteerMotivation": "You are a profession and want to do something good? Join the light side!",
+    "applyFund": "Find a volunteer",
+    "fundMotivation": "Are you an NCO? Got unfinished business? Find your ProCharity superhero!"
+  },
+  "LogIn": "I have an account",
+  "Register": "Register",
+  "writeName": "Write your name",
+  "writeEmail": "Write your Email",
+  "writePassword": "Write your Password",
+  "Send": "Send",
+  "isLoading": "Lodaing...",
+  "warmUpTask": "Warm Up Task",
+  "navLogin": "Login",
+  "navRegister": "Register",
+  "navHome": "Home",
+  "homePage": "Welcome!"
+
 }

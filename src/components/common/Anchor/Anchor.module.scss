@@ -1,0 +1,31 @@
+@use '@styles/_variables' as *;
+
+.simpleAnchor {
+    color: $secondaryColor;
+    text-decoration: none;
+}
+
+.simpleAnchor:hover {
+    color: $quaternaryColor;
+    cursor: pointer;
+}
+
+.simpleAnchor:focus {
+    color: $quaternaryColor;
+}
+
+.fancyAnchor {
+    text-decoration: none;
+}
+
+.navAnchor {
+    color: $secondaryColor;
+}
+
+.navAnchor:focus {
+    color: $backgroundColor;
+}
+
+.navAnchor:hover {
+    color: $backgroundColor;
+}

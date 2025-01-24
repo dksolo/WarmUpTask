@@ -1,0 +1,24 @@
+@use '@styles/variables' as *;
+
+.card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  border-radius: 10px;
+  max-width: 100%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  background-color: $quaternaryColor;
+}
+
+.cardLink:hover {
+  background-color: $secondaryColor;
+}
+
+.cardLink:focus {
+  background-color: $secondaryColor;
+}

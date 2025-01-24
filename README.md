@@ -1,50 +1,78 @@
-# React + TypeScript + Vite
+# Project Month WarmUp
+A little warm up project to revise UI composition skills 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+##Project Structure: 
+### Pages:
 
-Currently, two official plugins are available:
+MainPage:
+— Layout
+—— Section
+——— Button#login -> Modal(LoginForm)
+——— Button#register -> Modal(RegisterForm)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+LoginPage:
+— Layout
+—— Section
+——— Card -> LoginForm
 
-## Expanding the ESLint configuration
+RegisterPage:
+— Layout
+—— Section
+——— Card > RegisterForm
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+-----------------------
+### Screens:
 
-- Configure the top-level `parserOptions` property like this:
+LoginForm:
+— Form
+—— Field > InputEmail
+—— Field > InputPassword
 
-```js
-export default tseslint.config({
-	languageOptions: {
-		// other options...
-		parserOptions: {
-			project: ['./tsconfig.node.json', './tsconfig.app.json'],
-			tsconfigRootDir: import.meta.dirname,
-		},
-	},
-});
-```
+RegisterForm:
+— Form
+—— Field > InputText
+—— Field > InputEmail
+—— Field > InputPassword
+—— Field > InputPassword
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+-----------------------
+### Containers
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react';
+Layout:
+— Header
+— {children}
+— Footer
 
-export default tseslint.config({
-	// Set the react version
-	settings: { react: { version: '18.3' } },
-	plugins: {
-		// Add the react plugin
-		react,
-	},
-	rules: {
-		// other rules...
-		// Enable its recommended rules
-		...react.configs.recommended.rules,
-		...react.configs['jsx-runtime'].rules,
-	},
-});
-```
+Section:
+— {children}
+
+Card:
+— {children}
+
+Header:
+— Logo
+— Menu
+— {children}
+
+Footer:
+— Logo
+— Menu[]
+
+Form:
+— {children}
+
+Field:
+— {children}
+
+Modal:
+— {children}
+
+------------------------
+### Components
+
+— Anchor
+— Typography {Title, Text}
+— Input {InputText, InputEmail, InputPassword}
+— Action {Button, Link}
+
+

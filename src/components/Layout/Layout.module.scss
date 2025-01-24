@@ -1,0 +1,21 @@
+@use '@styles/_variables' as *;
+
+
+.headerFooter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: $backgroundColor;
+    background-color: $AccentColor;
+}
+
+
+.layout {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}

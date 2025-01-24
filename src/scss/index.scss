@@ -1,0 +1,21 @@
+@import './_variables.scss';
+
+:root {
+  font-family: $primaryFont;
+  font-size: $fontSize;
+  background-color: $backgroundColor;
+  color: $AccentColor;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+a {
+  text-decoration: none;
+} 

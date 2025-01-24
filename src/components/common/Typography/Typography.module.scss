@@ -1,0 +1,20 @@
+@use '@styles/variables' as *;
+
+.mainHeader {
+    align-self: center;
+    font-size: $bigFontSize;
+}
+
+.header2 {
+    align-self: center;
+    font-size: $midFontSize;
+}
+
+.header3 {
+    align-self: center;
+    font-size: $fontSize;
+}
+
+.paragraph {
+    font-size: $fontSize;
+}

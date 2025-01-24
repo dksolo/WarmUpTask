@@ -1,0 +1,53 @@
+@use '@styles/variables' as *;
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $overlayColor;
+  z-index: 100;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  border-radius: 10px;
+  max-width: 100%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  background-color: $quaternaryColor;
+
+}
+
+.xButton {
+  width: 24px;
+  border-radius: 10px;
+  height: 24px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border: 1px solid $secondaryColor;
+  cursor:pointer;
+  color: $secondaryColor;
+  background-color: $backgroundColor;
+}
+
+
+.xButton:hover {
+  background-color: $backgroundColor;
+  border: 1px solid $AccentColor;
+  color: $AccentColor;
+}
+
+.xButton:focus {
+  background-color: $backgroundColor;
+  border: 1px solid $AccentColor;
+  color: $AccentColor;
+}
